@@ -1,2 +1,3 @@
-# DailyReturn_Estimator
-DailyReturn_Estimator
+This Application accepts ticker input from the user and print its stock price. By default Date range is of 10 days, however user can review the historical stock price upto 1 year.
+I used Shiny package so that it can be user friendly application and thus even a laymen can find it easy to use.
+It was implemented with the help of Reactive component of Shiny package to avoid blocking of user (otherwise will consider us "bot"). It also helps in fast processing because everytime getsymbols function does not execute(until and unless there is change in Date Range Input) and thus previous data can be fetched from cache memory.
